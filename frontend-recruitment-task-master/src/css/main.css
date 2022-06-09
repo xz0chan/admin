@@ -1,0 +1,133 @@
+body {
+  background-color: rgb(180, 173, 173);
+  font-family: "Roboto", sans-serif;
+}
+.box {
+  width: 1440px;
+  height: 960px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+aside {
+  background-image: url("../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_ar_4_3,c_fill,g_auto__c_scale,w_538.jpg");
+  background-repeat: no-repeat;
+  width: 505px;
+  height: 330px;
+  margin-top: 96px;
+  margin-left: 230px;
+}
+main {
+  padding-left: 95px;
+  padding-top: 136px;
+  padding-right: 230px;
+  width: 380px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #121212;
+}
+p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #121212;
+}
+button {
+  margin-top: 32px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  order: 0;
+  flex-grow: 0;
+  padding: 16px 40px;
+  gap: 10px;
+  width: 128px;
+  height: 48px;
+  background: #e4c1ae;
+  border-radius: 32px;
+  border: #e4c1ae;
+}
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: #121212;
+  opacity: 0.5;
+  z-index: 1;
+  cursor: pointer;
+}
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #ffffff;
+  width: 920px;
+  height: 210px;
+  z-index: 2;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-left: 95px;
+}
+.popup h1 {
+  margin-bottom: 24px;
+}
+.popup .close-button {
+  position: absolute;
+  right: 46px;
+  top: 46px;
+  width: 24px;
+  height: 24px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.popup.active .overlay {
+  display: block;
+}
+.popup.active .content {
+  transition: 0.3;
+  transform: translate(-50%, -50%) scale(1);
+}
+.content button {
+  margin-top: -30px;
+  margin-left: 650px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  order: 0;
+  flex-grow: 0;
+  padding: 16px 40px;
+  gap: 10px;
+  width: 128px;
+  height: 48px;
+  background: #ff011a;
+  border-radius: 32px;
+  border: #e4c1ae;
+}
+.content button:hover {
+  background-color: rgb(246, 204, 204);
+  color: black;
+  transition: 0.5s;
+}
+#button_reset {
+  display: none;
+}
